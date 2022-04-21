@@ -2,11 +2,14 @@
 
 require_relative 'hello/version'
 
-# module Jekyll
-#   module Hello
-#     class Error < StandardError; end
-#     # Your code goes here...
-#   end
-# end
-
-require 'jekyll/commands/hello_impl'
+class Hello < Jekyll::Command
+  class << self
+    def init_with_program(prog)
+      prog.command(:hello) do |c|
+        c.action do |args, options|
+          Jekyll.logger.info "Hello!"
+        end
+      end
+    end
+  end
+end
