@@ -1,0 +1,16 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "args": ["hello"],
+      "cwd": "${workspaceFolder}/demo",
+      "type": "Ruby",
+      "name": "Debug hello sub-command",
+      "program": "~/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/jekyll-4.2.2/exe/jekyll",
+      "request": "launch",
+    }
+  ]
+}
