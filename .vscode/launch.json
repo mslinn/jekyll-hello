@@ -11,6 +11,18 @@
       "name": "Debug hello sub-command",
       "program": "~/.rbenv/versions/2.7.2/lib/ruby/gems/2.7.0/gems/jekyll-4.2.2/exe/jekyll",
       "request": "launch",
-    }
+    },
+    {
+      "cwd": "${workspaceRoot}",
+      "name": "Attach rdebug-ide",
+      "request": "attach",
+      "remoteHost": "localhost",
+      "remotePort": "1234",
+      "remoteWorkspaceRoot": "/",
+      "restart": true,
+      "showDebuggerOutput": true,
+      "stopOnEntry": true,
+      "type": "Ruby",
+    },
   ]
 }

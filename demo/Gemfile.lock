@@ -1,3 +1,9 @@
+PATH
+  remote: ..
+  specs:
+    jekyll-hello (0.1.0)
+      jekyll
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -66,8 +72,6 @@ GEM
       sprockets-sass
     jekyll-environment-variables (1.0.1)
       jekyll (>= 3.0, < 5.x)
-    jekyll-hello (0.1.0)
-      jekyll
     jekyll-sass-converter (2.2.0)
       sassc (> 2.0.1, < 3.0)
     jekyll-sort (0.3.1)
@@ -178,7 +182,7 @@ DEPENDENCIES
   jekyll (~> 4.2.2)
   jekyll-assets
   jekyll-environment-variables
-  jekyll-hello
+  jekyll-hello!
   jekyll-sort
   jekyll-tagging
   kramdown

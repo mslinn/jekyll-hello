@@ -2,6 +2,7 @@
 
 require_relative 'hello/version'
 
+# See https://www.mslinn.com/blog/2022/03/28/jekyll-plugin-template-collection.html#cmds
 class Hello < Jekyll::Command
   class << self
     # @param prog [Mercenary::Program]

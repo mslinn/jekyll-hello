@@ -10,7 +10,7 @@ group :jekyll_plugins do
   gem 'html-proofer'
   gem 'jekyll-assets'
   gem 'jekyll-environment-variables'
-  gem 'jekyll-hello'
+  gem 'jekyll-hello', path: '../'
   gem 'jekyll-sort'
   gem 'jekyll-tagging'
   gem 'kramdown'
