@@ -1,38 +1,60 @@
 # Jekyll::Hello
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/jekyll/hello`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+A quick test of a custom Jekyll command called `hello`.
+This Jekyll subcommand must be installed into a Jekyll project before it can be used.
+The `hello` subcommand will not be available outside that project.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Edit the `Gemfile` of your Jekyll site.
+Specify `jekyll-hello` in the `jekyll_plugins` group, like this:
 
 ```ruby
-gem 'jekyll-hello'
+group :jekyll_plugins do
+  gem 'jekyll-hello'
+end
 ```
 
 And then execute:
+```
+$ bundle install
+```
 
-    $ bundle install
-
-Or install it yourself as:
-
-    $ gem install jekyll-hello
 
 ## Usage
+The `demo` subdirectory is a small Jekyll site, pre-configured with the `hello` Jekyll subcommand.
+The subcommand merely outputs `Hello!` and stops.
 
-TODO: Write usage instructions here
+```
+$ cd demo
+
+$ jekyll hello
+             Hello!
+```
 
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+After checking out the repo, run `bin/setup` to install dependencies.
+You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+To install this gem onto your local machine, run:
+```
+$ bundle exec rake install
+```
+
+To release a new version, update the version number in `version.rb`,
+and then run:
+```
+$ bundle exec rake release
+```
+The above does the following:
+ - Creates a git tag for the version
+ - Pushes git commits and the created tag
+ - Pushes the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/jekyll-hello.
+Bug reports and pull requests are welcome on GitHub at https://github.com/mslinn/jekyll-hello.
 
 ## License
 
