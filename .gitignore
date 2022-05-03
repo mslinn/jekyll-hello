@@ -1,5 +1,4 @@
 /.bundle/
-demo/_site/
 /.yardoc
 /_yardoc/
 /coverage/
@@ -9,4 +8,6 @@ demo/_site/
 /tmp/
 Gemfile.lock
 /exe/
-.jekyll-cache/
+demo/_site/
+demo/.jekyll-cache/
+demo/.jekyll-metadata
