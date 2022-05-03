@@ -9,3 +9,4 @@ demo/_site/
 /tmp/
 Gemfile.lock
 /exe/
+.jekyll-cache/
