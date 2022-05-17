@@ -9,7 +9,11 @@ class Hello < Jekyll::Command
     def init_with_program(prog)
       prog.command(:hello) do |c|
         c.action do |args, options|
-          Jekyll.logger.info "Hello! args=#{args}; options=#{options}"
+          Jekyll::Hooks.register(:site, :post_read) do |_site|
+            Jekyll.logger.info "Hello! args=#{args}; options=#{options}"
+            # Your custom code goes here, site is available
+            # Register another hook if you need other variables
+          end
         end
       end
     end
