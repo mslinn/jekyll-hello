@@ -7,43 +7,28 @@
     {
       "args": ["hello"],
       "cwd": "${workspaceFolder}/demo",
-      "type": "Ruby",
+      "debugPort": "0",
       "name": "Debug hello sub-command",
-      "program": "${workspaceRoot}/main.rb",
+      "script": "${workspaceRoot}/main.rb",
       "request": "launch",
+      "type": "rdbg",
     },
     {
-      "cwd": "${workspaceRoot}",
+      "debugPort": "0",
       "name": "Attach rdebug-ide",
       "request": "attach",
-      "remoteHost": "localhost",
-      "remotePort": "1234",
-      "remoteWorkspaceRoot": "/",
-      "showDebuggerOutput": true,
-      "type": "Ruby",
-    },
-    {
-      "cwd": "${workspaceRoot}",
-      "name": "Attach rdebug-ide",
-      "request": "attach",
-      "remoteHost": "localhost",
-      "remotePort": "1234",
-      "remoteWorkspaceRoot": "/",
-      "showDebuggerOutput": true,
-      "type": "Ruby",
+      "type": "rdbg",
     },
     {
       "args": [
         "-I",
         "${workspaceRoot}"
       ],
-      "cwd": "${workspaceRoot}",
+      "debugPort": "0",
       "name": "RSpec - all",
-      "program": "${workspaceRoot}/exe/rspec",
+      "script": "${workspaceRoot}/exe/rspec",
       "request": "launch",
-      "showDebuggerOutput": false,
-      "type": "Ruby",
-      "useBundler": true,
+      "type": "rdbg",
     },
     {
       "args": [
@@ -51,13 +36,10 @@
         "${workspaceRoot}",
         "${file}"
       ],
-      "cwd": "${workspaceRoot}",
       "name": "RSpec - active spec file only",
-      "program": "${workspaceRoot}/exe/rspec",
+      "script": "${workspaceRoot}/exe/rspec",
       "request": "launch",
-      "showDebuggerOutput": false,
-      "type": "Ruby",
-      "useBundler": true,
+      "type": "rdbg",
     }
   ]
 }

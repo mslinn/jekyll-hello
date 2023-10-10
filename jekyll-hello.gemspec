@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
 
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = 'https://github.com/mslinn/jekyll-hello'
-  # spec.metadata['changelog_uri'] = 'TODO: Put your gem's CHANGELOG.md URL here.'
+  spec.metadata['changelog_uri'] = 'https://github.com/mslinn/jekyll-hello/CHANGELOG.md'
 
   spec.files = Dir['.rubocop.yml', 'LICENSE.*', 'Rakefile', '{lib,spec}/**/*', '*.gemspec', '*.md']
   spec.bindir = 'exe'

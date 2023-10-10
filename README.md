@@ -16,16 +16,18 @@ end
 ```
 
 And then execute:
-```
-$ bundle install
+
+```shell
+$ bundle
 ```
 
 
 ## Usage
+
 The `demo` subdirectory is a small Jekyll site, pre-configured with the `hello` Jekyll subcommand.
 The subcommand merely outputs `Hello!` and stops.
 
-```
+```shell
 $ cd demo
 
 $ jekyll hello
@@ -38,19 +40,24 @@ After checking out the repo, run `bin/setup` to install dependencies.
 You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
 To install this gem onto your local machine, run:
-```
+
+```shell
 $ bundle exec rake install
 ```
 
 To release a new version, update the version number in `version.rb`,
 and then run:
-```
+
+```shell
 $ bundle exec rake release
 ```
+
 The above does the following:
- - Creates a git tag for the version
- - Pushes git commits and the created tag
- - Pushes the `.gem` file to [rubygems.org](https://rubygems.org).
+
+- Creates a git tag for the version
+- Pushes git commits and the created tag
+- Pushes the `.gem` file to [rubygems.org](https://rubygems.org).
+
 
 ## Contributing
 
