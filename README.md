@@ -4,6 +4,7 @@ A quick test of a custom Jekyll command called `hello`.
 This Jekyll subcommand must be installed into a Jekyll project before it can be used.
 The `hello` subcommand will not be available outside that project.
 
+
 ## Installation
 
 Edit the `Gemfile` of your Jekyll site.
@@ -34,6 +35,7 @@ $ jekyll hello
              Hello!
 ```
 
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies.
@@ -62,6 +64,7 @@ The above does the following:
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/mslinn/jekyll-hello.
+
 
 ## License
 
