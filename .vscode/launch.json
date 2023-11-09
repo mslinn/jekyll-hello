@@ -5,11 +5,10 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "args": ["hello"],
-      "cwd": "${workspaceFolder}/demo",
+      "args": ["Fred"],
       "debugPort": "0",
       "name": "Debug hello sub-command",
-      "script": "${workspaceRoot}/main.rb",
+      "script": "${workspaceRoot}/lib/jekyll/hello.rb",
       "request": "launch",
       "type": "rdbg",
     },
