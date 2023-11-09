@@ -1,3 +1,4 @@
+require 'jekyll'
 require_relative 'hello/version'
 
 # See https://www.mslinn.com/jekyll/10400-jekyll-plugin-template-collection.html#cmds
