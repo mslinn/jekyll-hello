@@ -13,7 +13,6 @@ AllCops:
     - _site/**/*
     - Gemfile*
     - binstub/**/*
-    - exe/**/*
     - jekyll/**/*
     - vendor/**/*
   NewCops: enable

@@ -25,7 +25,7 @@
       ],
       "debugPort": "0",
       "name": "RSpec - all",
-      "script": "${workspaceRoot}/exe/rspec",
+      "script": "${workspaceRoot}/binstub/rspec",
       "request": "launch",
       "type": "rdbg",
     },
@@ -36,7 +36,7 @@
         "${file}"
       ],
       "name": "RSpec - active spec file only",
-      "script": "${workspaceRoot}/exe/rspec",
+      "script": "${workspaceRoot}/binstub/rspec",
       "request": "launch",
       "type": "rdbg",
     }

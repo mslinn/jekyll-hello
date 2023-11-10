@@ -1,14 +1,14 @@
+.jekyll-cache/
 /.bundle/
 /.yardoc
 /_yardoc/
+/binstub/
 /coverage/
 /doc/
 /pkg/
 /spec/reports/
 /tmp/
 Gemfile.lock
-/binstub/
-demo/_site/
 demo/.jekyll-cache/
 demo/.jekyll-metadata
-.jekyll-cache/
+demo/_site/
