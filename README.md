@@ -4,6 +4,8 @@ A quick test of a custom Jekyll command called `hello`.
 This Jekyll subcommand must be installed into a Jekyll project before it can be used.
 The `hello` subcommand will not be available outside that project.
 
+**DOES NOT WORK**
+
 
 ## Installation
 

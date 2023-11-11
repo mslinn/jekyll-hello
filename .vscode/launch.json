@@ -5,11 +5,23 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "args": ["Fred"],
+      "args": [
+        "serve",
+        "--livereload_port", "35721",
+        "--force_polling",
+        "--host", "0.0.0.0",
+        "--port", "4006",
+        "--future",
+        "--incremental",
+        "--livereload",
+        "--drafts",
+        "--unpublished"
+      ],
+      "cwd": "${workspaceRoot}/demo",
       "debugPort": "0",
-      "name": "Debug hello sub-command",
-      "script": "${workspaceRoot}/lib/jekyll/hello.rb",
+      "name": "Debug Demo",
       "request": "launch",
+      "script": "${workspaceRoot}/binstub/jekyll",
       "type": "rdbg",
     },
     {
@@ -25,8 +37,8 @@
       ],
       "debugPort": "0",
       "name": "RSpec - all",
-      "script": "${workspaceRoot}/binstub/rspec",
       "request": "launch",
+      "script": "${workspaceRoot}/binstub/rspec",
       "type": "rdbg",
     },
     {
@@ -35,9 +47,10 @@
         "${workspaceRoot}",
         "${file}"
       ],
+      "debugPort": "0",
       "name": "RSpec - active spec file only",
-      "script": "${workspaceRoot}/binstub/rspec",
       "request": "launch",
+      "script": "${workspaceRoot}/binstub/rspec",
       "type": "rdbg",
     }
   ]
